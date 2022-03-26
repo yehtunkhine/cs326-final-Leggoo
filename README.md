@@ -1,7 +1,7 @@
 # cs326-final-Leggoo
 CS326 Final project - interactive webpage using HTML,CSS and JS
 
-| Team Name: Leggoo | Application Name: Kaja 카자 |
+Team Name: Leggoo | Application Name: Kaja 카자
 
 
 Team Overview:
