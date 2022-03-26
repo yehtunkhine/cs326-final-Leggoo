@@ -23,16 +23,17 @@ The idea is similar to the website “meetup” but it’s targeted only for uma
 ## Important Components:
 
 INTERFACE
-	LOG IN
-		Gmail (only for @umass.edu)
-		Password 
-		Spire ID for verification
-	End LOG IN
-	FEED (scrollable feed)
-		post  -> related features category
-			Pictures
-			Description
-				Place
+ LOG IN
+  Gmail (only for @umass.edu)
+   Password 
+   Spire ID for verification
+  End LOG IN
+  
+	-FEED (scrollable feed)
+		-post  -> related features category
+			-Pictures
+			-Description
+				-Place
 				Time 
 				Capacity
 				Transportation(not sure)
