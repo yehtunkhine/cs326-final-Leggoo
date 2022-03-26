@@ -6,13 +6,12 @@ Application Name: Kaja 카자
 
 Team Overview:
 
-Team member	/	GitHub usernames 
-
-Ye Tun Khine	/	yehtunkhine
-Yuki Thane	/	YukiThane
-Khai Wai	/	KhaiWai
-Victor Vuong	/	vuongkv
-
+| Team member  | GitHub usernames |
+| ------------- | ------------- |
+| Ye Tun Khine  | yehtunkhine  |
+| Yuki Thane  | YukiThane  |
+| Khai Wai  | KhaiWai  |
+| Victor Vuong  | vuongkv  |
 
 		
 ## Innovative Idea:  
