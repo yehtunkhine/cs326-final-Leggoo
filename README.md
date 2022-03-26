@@ -24,7 +24,7 @@ The idea is similar to the website “meetup” but it’s targeted only for uma
 
 INTERFACE
 - LOG IN
- - Gmail (only for @umass.edu)
+  - Gmail (only for @umass.edu)
   - Password 
   - Spire ID for verification
 - End LOG IN
