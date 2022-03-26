@@ -30,33 +30,32 @@ INTERFACE
 - End LOG IN
 
 - FEED (scrollable feed)
- - post  -> related features category
-  - Pictures
-  - Description
-   - Place
-   - Time 
-   - Capacity
-   - Transportation(not sure)
-  - Reaction
-  - Comment
-  - Share
- - Chat box
- - End post
+  - post  -> related features category
+   - Pictures
+   - Description
+     - Place
+     - Time 
+     - Capacity
+     - Transportation(not sure)
+   - Reaction
+   - Comment
+   - Share
+  - End post
 - End FEED
 
 - PROFILE
- - Personal data
- - Bio
- - POSTING
+  - Personal data
+  - Bio
+  - POSTING
 - End PROFILE
 
 - CHAT BOX
- - chatting 
- - Picture sending
- - Stickers
- - Gif(extra work)
- - Reaction to message
- - Voice and video call
+  - chatting 
+  - Picture sending
+  - Stickers
+  - Gif(extra work)
+  - Reaction to message
+  - Voice and video call
 - End CHAT BOX
 End of INTERFACE
 	
