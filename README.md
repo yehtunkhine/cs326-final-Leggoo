@@ -28,7 +28,6 @@ INTERFACE
 		Password 
 		Spire ID for verification
 	End LOG IN
-	______
 	FEED (scrollable feed)
 		post  -> related features category
 			Pictures
@@ -43,13 +42,11 @@ INTERFACE
 			Chat box 
 		End post
 	End FEED
-	______
 	PROFILE
 		Personal data
 		Bio
 		POSTING	
 	End PROFILE
-	______
 	CHAT BOX
 		chatting 
 		Picture sending
