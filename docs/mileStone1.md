@@ -18,15 +18,25 @@ The idea is similar to the website “meetup” but it’s targeted only for uma
 ## Important Components:
 
 INTERFACE
-- LOG IN
+
+- LOG IN/ SIGN UP
   - Gmail (only for @umass.edu)
   - Password 
   - Spire ID for verification
+  - more information for sign up users on a separate page
 - End LOG IN
 
-Wireframe:
+Wireframe LOG IN:
+![signinWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage1.png)
+Actual LOG IN:
+![signinActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/Sign%20in.png)
 
+Wireframe SIGN UP:
+![signupWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage2.png)
+Actual SIGN UP:
+![signupActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/Register.png)
 
+HOMEPAGE AND COMPONENTS
 - FEED (scrollable feed)
   - post  -> related features category
    - Pictures
@@ -40,12 +50,27 @@ Wireframe:
    - Share
   - End post
 - End FEED
-
-- PROFILE
+- - PROFILE
   - Personal data
   - Bio
   - POSTING
 - End PROFILE
+
+Wireframe:
+![hompageWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage3.png)
+![feedWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage4.png)
+Actual:
+![homepageActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/Home%20Page.png)
+
+
+MY EVENTS PAGE
+-contains selected events more personalized than the feed itself
+
+Wireframe:
+![myEventsWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage5.png)
+Actual:
+![myEventsActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/My%20Event.png)
+
 
 - CHAT BOX
   - chatting 
@@ -57,11 +82,9 @@ Wireframe:
 - End CHAT BOX
 
 Wireframe:
-
-
+![chatboxpageWF](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/43f106d74ece3bf319f98c5b42d39a8bcba3f03c/kajaPage6.png)
 Actual:
 ![chatboxpageActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2a3a2b5c997f175848d8ae9f920a493d38e8fe7e/Chat%20box.png)
-
 
 End of INTERFACE
 	
