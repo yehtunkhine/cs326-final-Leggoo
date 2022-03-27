@@ -56,6 +56,12 @@ Wireframe:
   - Voice and video call
 - End CHAT BOX
 
+Wireframe:
+
+
+Actual:
+![chatboxpageActual](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2a3a2b5c997f175848d8ae9f920a493d38e8fe7e/Chat%20box.png)
+
 
 End of INTERFACE
 	
