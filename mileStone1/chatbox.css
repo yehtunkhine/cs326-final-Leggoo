@@ -1,0 +1,27 @@
+#chat3{
+    border-radius: 15px;
+}
+
+#page-background{
+    background-color: grey;
+}
+
+#user-scrollbar{
+    position: relative;
+    height: 400px;
+}
+
+#chat-scrollbar{
+    position: relative;
+    height: 400px;
+}
+
+#avatar{
+    width: 40px;
+    height: 100%;
+}
+
+#reply{
+    background-color: lightgray;
+}
+

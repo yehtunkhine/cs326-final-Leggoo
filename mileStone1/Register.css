@@ -1,0 +1,11 @@
+.vh-100{
+    background-color: rbg(216,206,206);
+}
+
+.card{
+    border-radius: 25px;
+}
+
+.card-body{
+    background-color: rgb(224, 220, 228);
+}

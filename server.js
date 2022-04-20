@@ -67,4 +67,4 @@ app.get("/event/:id", (req, res) => {
 
 app.listen(port, () => {
     console.log("Application running on port " + port);
-});
+/usr/bin/bash: q: command not found

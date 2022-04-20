@@ -18,3 +18,11 @@
 #sidebar.active {
     margin-left: -250px;
 }
+
+.nav-link{
+    color: aliceblue;
+}
+
+.nav-link active{
+    color: aliceblue;
+}
