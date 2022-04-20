@@ -21,8 +21,5 @@
 
 .nav-link{
     color: aliceblue;
-}
-
-.nav-link active{
-    color: aliceblue;
+    text-decoration: none;
 }

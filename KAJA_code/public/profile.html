@@ -10,7 +10,8 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./select2js/css/style.css">
 </head>
 <body>
     <div class="container-xl px-4 mt-4">
@@ -89,18 +90,18 @@
                             <div class="mb-3">
                                 <label class="small mb-3" for="inputHobbies">Hobbies </label>
                                 <div class ="wrapper">
-                                <select class ="hobbies-dropdown" id="hobbies" multiple>
+                                <select class ="js-select2 " id="hobbies" multiple="multiple">
                                     <option selected>Select Hobbies</option>
-                                    <option value="1">Outdoors</option>
-                                    <option value="2">Sports</option>
-                                    <option value="3">Games</option>
-                                    <option value="4">Food</option>
-                                    <option value="5">Art</option>
-                                    <option value="6">Social(Parties)</option>
-                                    <option value="7">Cafe</option>
-                                    <option value="8">Amusement Park</option>
-                                    <option value="9">Shopping</option>
-                                    <option value="10">Movie</option>
+                                    <option value="01" data-badge="">Outdoors</option>
+                                    <option value="02" data-badge="">Sports</option>
+                                    <option value="03" data-badge="">Games</option>
+                                    <option value="04" data-badge="">Food</option>
+                                    <option value="05" data-badge="">Art</option>
+                                    <option value="06" data-badge="">Social(Parties)</option>
+                                    <option value="07" data-badge="">Cafe</option>
+                                    <option value="08" data-badge="">Amusement Park</option>
+                                    <option value="09" data-badge="">Shopping</option>
+                                    <option value="010" data-badge="">Movie</option>
                                 </select>
                                 </div>
                             </div>
@@ -113,5 +114,11 @@
         </div>
     </div>
     <script src="js/bootstrap.js"></script>
+	<script src="./select2js/js/jquery.min.js"></script>
+    <script src="./select2js/js/popper.js"></script>
+    <script src="./select2js/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script src="./select2js/js/main.js"></script>
+  
 </body>
 </html>
