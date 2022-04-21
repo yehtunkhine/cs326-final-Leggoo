@@ -12,28 +12,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-// app.use('/static', express.static('public'));
-
-// connect to homepage html
-app.get('/', (req, res) => {
-    res.sendFile(path + '/public/homePage.html');
-});
-
-// connect to login page html
-app.get('/login', (req, res) => {
-    res.sendFile(path +'/public/signIn.html');
-    
-});
-
-// connect to profile page html
-app.get('/profile', (req, res) => {
-    res.sendFile(path + '/public/profile.html');
-});
-
-app.get('/register', (req, res) => {
-    res.sendFile(path + '/public/Register.html');   
-});
-
+app.use('/static', express.static('public'));
 
 
 //const datafile = 'Data-Test.json';
@@ -76,7 +55,11 @@ app.delete('/delete/user/:id', (req, res) => {
     }
 });
 
-// getting all users
+// // getting all users
+// app.get('/users' , (req, res) => {
+
+// });
+
 app.get('*', (req, res) => {
     res.status(404).json({message: 'Unknown Request'});
 });
@@ -93,13 +76,11 @@ app.get("/event/:id", (req, res) => {
     const {id} = req.params;
     const event = event[id];
     if(event){
-        res.json(event);
+        res.json(event); 
     }else{
         res.status(404).json({message: 'Unknown Request'});
     }
 });
-
-
 
 app.listen(port, () => {
     console.log("Application running on port " + port);
