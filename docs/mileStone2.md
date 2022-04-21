@@ -30,3 +30,4 @@ They will have a username, name, age, intersts, and my events.
 
 /events/myEvents/notGoing?event=… - takes the event from the feed out of the users going list, essentially taking the user out of the roster of people going to that event
 
+![API](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/45799ab03a9a5e584dc8311b937ebd57f8694647/API.jpg)
