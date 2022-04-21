@@ -29,3 +29,4 @@ They will have a userID, name, age, spireID, intersts, DOB, and my events.
 
 /events/myEvents/notGoing?event=… - takes the event from the feed out of the users going list, essentially taking the user out of the roster of people going to that event
 
+![API]
