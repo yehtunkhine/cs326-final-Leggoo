@@ -98,7 +98,7 @@ async function save(filename){
 // });
 
 // Create a new user with id and name
-app.post('/create/user/:id/:name', async (req, res) => {
+app.post('/create/user/:id/:name/:age/:email/:password', async (req, res) => {
     await reload(UserJSON);
     const user = req.params;
     users[user.id]= user;
@@ -119,6 +119,7 @@ app.get('/user/:id', async (req, res)=> {
     }
     save(UserJSON);
 });
+
 
 // Delete a user profile with their id
 app.delete('/delete/user/:id', async (req, res) => {

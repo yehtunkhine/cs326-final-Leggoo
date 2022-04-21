@@ -1,14 +1,15 @@
-Users Object – has 5 fields: ID, Name, Age, Interests, DOB, Email, Password, Events
+Users Object – has 5 fields: ID, Name, Age, Email, Password,
 Event Object – has 5 fields: Name, Description, Date, Time, Roster, category 
 
 
 /users/login - allows a user to login
 	Takes the users email, password.
 
-/users/new?userID=vvuong&email=vvuong@umass.edu&name=victor&age=21&ID=2132131...etc. ¬– allows for a user to make a login and register into the application. 
-They will have a userID, name, age, spireID, intersts, DOB, and my events.
+/create/user/:id/:email/:name/:age/:username/:password 
+- allows for a user to make a login and register into the application. 
+They will have a username, name, age, intersts, and my events.
 
-/users/profile – this endpoint retrieves the users profile information, like there email, name, age, and etc.
+/profile – this endpoint retrieves the users profile information, like there email, name, age, and etc.
 
 /user/profile/change? – allows the user to change a aspect of their profile
 
