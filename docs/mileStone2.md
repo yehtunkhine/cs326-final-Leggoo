@@ -1,3 +1,4 @@
+## API documentation
 Users Object – has 5 fields: ID, Name, Age, Email, Password,
 Event Object – has 5 fields: Name, Description, Date, Time, Roster, category 
 
@@ -30,9 +31,11 @@ They will have a username, name, age, intersts, and my events.
 
 /events/myEvents/notGoing?event=… - takes the event from the feed out of the users going list, essentially taking the user out of the roster of people going to that event
 
+## API Flow Chart
+
 ![API](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/45799ab03a9a5e584dc8311b937ebd57f8694647/API.jpg)
 
-CLIENT INTERFACE
+## CLIENT INTERFACE
 ----------------
 
 ![Sign in (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2596e10abe1b69ed7cd29ec3463a236b2ac2ae3b/Sign%20in%20(1).png)
@@ -47,3 +50,7 @@ Currently, we have a newsfeed with a navigation bar on the left as the homepage 
 This is a personalized page just for your events. If you show interest in the event and react to it via our reaction button 'interested', events will appear here.
 ![Chat box (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/13c4f414c37e698f2345f8810ffff5004b3d93a1/Chat%20box%20(1).png)
 Chat to dm people on the platform.
+
+
+## Heroku-appURL
+HerokuURL - https://dashboard.heroku.com/apps/kaja-cs326finalproject/deploy/heroku-git
