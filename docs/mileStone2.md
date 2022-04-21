@@ -35,9 +35,9 @@ They will have a username, name, age, intersts, and my events.
 CLIENT INTERFACE
 ----------------
 
-![Sign in (1)]
-![Register (1)]
-![Create Profile]
-![Home Page (1)]
+![Sign in (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2596e10abe1b69ed7cd29ec3463a236b2ac2ae3b/Sign%20in%20(1).png)
+![Register (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2596e10abe1b69ed7cd29ec3463a236b2ac2ae3b/Register%20(1).png)
+![Profile](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2596e10abe1b69ed7cd29ec3463a236b2ac2ae3b/profile.png)
+![Home Page (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/2596e10abe1b69ed7cd29ec3463a236b2ac2ae3b/Home%20Page%20(1).png)
 ![My Event (1)]
 ![Chat box (1)](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/13c4f414c37e698f2345f8810ffff5004b3d93a1/Chat%20box%20(1).png)
