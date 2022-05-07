@@ -11,3 +11,9 @@
 body{
     background-color: rgb(224, 220, 228);
 }
+
+#create-btn{
+    position:absolute;
+    top: 10px;
+    right:5px;
+}
