@@ -3,7 +3,7 @@
 }
 
 #page-background{
-    background-color: grey;
+    background-color:rgb(224, 220, 228);
 }
 
 #user-scrollbar{
@@ -25,3 +25,8 @@
     background-color: lightgray;
 }
 
+   
+.nav-link{
+    color: aliceblue;
+    text-decoration: none;
+}

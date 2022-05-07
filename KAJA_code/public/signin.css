@@ -1,9 +1,5 @@
-.divider:after,
-.divider:before {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: rgb(206, 185, 227);
+body{
+  background-color:rgb(224, 220, 228);
 }
 .h-custom {
   height: calc(100% - 73px);

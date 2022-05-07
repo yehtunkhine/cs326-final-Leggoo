@@ -154,17 +154,3 @@ export class KajaDatabase {
     }        
 }
 
-
-
-new user = yetun
-
-yetun.getUserEvent(userID)
-[01,02,03,04]
-for loop
-eventdata  = getEvent(01)
-[01,eventname,balh, baoh]
-new kaja = new Event(01,eventname, blah, blah)
-
-kaja.name
-kaja.id
-
