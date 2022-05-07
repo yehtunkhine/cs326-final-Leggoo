@@ -4,8 +4,11 @@ App: Kaja 가자
 Semester: Spring 2022
 
 |  Ye Tun Khine   |  yehtunkhine |
+|-----------------|--------------|
 |  Khai Wai       |  KhaiWai     |
+|-----------------|--------------|
 |  Yuki Thane     |  YukiThane   |
+|-----------------|--------------|
 |  Victor Vuong   |  vuongkv     |
 
 Kaja app is an event specific app for UMass students to connect and meet up. Whether it is a casual hangout trying new restaurants, having a picnic, or an outdoor activity meetup, all these events can be posted, shared and notified to anyone on the platform. Like any other social media applications, Kaja has features for making an account like sign up and log in with the homepage easily navigable with the navigation bar that includes all that can be done on the app. Users will have their own profile page where the events they have added can be seen. The main feed includes all events searchable. Users can also create their own events and publish them on the main feed.  This is innovative in a way where most event websites and apps we have now for this area do not have the ability for individual students to connect since it is always organized by some groups. This app allows both individuals and groups to be able to organize events whether they are formal or casual.
