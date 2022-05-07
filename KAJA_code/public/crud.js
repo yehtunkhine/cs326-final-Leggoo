@@ -1,6 +1,6 @@
-export async function createUser(userID, userName, age, email, password) {
+export async function createAcc(accID, accName, age, email, password) {
     const response = await fetch(
-      `/user/create?userID=${userID}&userName=${userName}&age=${age}&email=${email}&password=${password}`,
+      `/acc/create?accID=${accID}&accName=${accName}&age=${age}&email=${email}&password=${password}`,
       {
         method: 'POST',
       }
@@ -9,17 +9,17 @@ export async function createUser(userID, userName, age, email, password) {
     return data;
 }
   
-export async function getUser(userID) {
-  const response = await fetch(`/user/read?userID=${userID}`, {
+export async function getAcc(accID) {
+  const response = await fetch(`/acc/read?accID=${accID}`, {
     method: 'GET',
   });
   const data = await response.json();
   return data;
 }
 
-export async function updateUser(userID, userName, age, email, password) {
+export async function updateAcc(accID, accName, age, email, password) {
   const response = await fetch(
-    `/user/update?userID=${userID}&userName=${userName}&age=${age}&email=${email}&password=${password}`,
+    `/acc/update?accID=${accID}&accName=${accName}&age=${age}&email=${email}&password=${password}`,
     {
       method: 'PUT',
     }
@@ -28,24 +28,24 @@ export async function updateUser(userID, userName, age, email, password) {
   return data;
 }
 
-export async function deleteUser(userID) {
-  const response = await fetch(`/user/delete?userID=${userID}`, {
+export async function deleteAcc(accID) {
+  const response = await fetch(`/acc/delete?accID=${accID}`, {
     method: 'DELETE',
   });
   const data = await response.json();
   return data;
 }
 
-export async function getAllUser() {
-  const response = await fetch(`/user/all`, {
+export async function getAllAcc() {
+  const response = await fetch(`/acc/all`, {
     method: 'GET',
   });
   const data = await response.json();
   return data;
 }
 
-export async function getUserEvent(userID) {
-  const response = await fetch(`/user/getEvent?userID=${userID}`, {
+export async function getAccEvent(accID) {
+  const response = await fetch(`/acc/getEvent?accID=${accID}`, {
     method: 'GET',
   });
   const data = await response.json();

@@ -1,5 +1,5 @@
-import * as crud from './crud.js';
+// import * as crud from './crud.js';
 
-const name = document.getElementById('inputUsername');
+// const name = document.getElementById('inputUsername');
 
-console.log(name);
+// console.log(name);

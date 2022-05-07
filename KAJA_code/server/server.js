@@ -1,10 +1,14 @@
 import express from 'express';
+import logger from 'morgan';
 import { KajaDatabase } from './kaja-db.js';
 
 class KajaServer {
   constructor(dburl) {
     this.dburl = dburl;
     this.app = express();
+    this.app.use(logger('dev'));
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({extended: false}));
     this.app.use('/', express.static('public'));
   }
 
@@ -12,50 +16,50 @@ class KajaServer {
     // Note: when using arrow functions, the "this" binding is lost.
     const self = this;
 
-    this.app.post('/user/create/:userID/:userName/:age/:email/:password', async (req, res) => {
+    this.app.post('/acc/create/:accID/:accName/:age/:email/:password', async (req, res) => {
       try {
-        const { userID, userName, age, email, password } = req.query;
-        const user = await self.db.createUser(userID, userName, age, email, password);
-        res.send(JSON.stringify(user));
+        const { accID, accName, age, email, password } = req.query;
+        const acc = await self.db.createacc(accID, accName, age, email, password);
+        res.send(JSON.stringify(acc));
       } catch (err) {
         res.status(500).send(err);
       }
     });
 
-    this.app.get('/user/read/:userID', async (req, res) => {
+    this.app.get('/acc/read/:accID', async (req, res) => {
       try {
-        const { userID } = req.query;
-        const user = await self.db.getUser(userID);
-        res.send(JSON.stringify(user));
+        const { accID } = req.query;
+        const acc = await self.db.getAcc(accID);
+        res.send(JSON.stringify(acc));
       } catch (err) {
         res.status(500).send(err);
       }
     });
 
-    this.app.put('/user/update/:userID/:userName/:age/:email/:password', async (req, res) => {
+    this.app.put('/acc/update/:accID/:accName/:age/:email/:password', async (req, res) => {
       try {
-        const { userID, userName, age, email, password } = req.query;
-        const user = await self.db.updateUser(userID, userName, age, email, password);
-        res.send(JSON.stringify(user));
+        const { accID, accName, age, email, password } = req.query;
+        const acc = await self.db.updateAcc(accID, accName, age, email, password);
+        res.send(JSON.stringify(acc));
       } catch (err) {
         res.status(500).send(err);
       }
     });
 
-    this.app.delete('/user/delete/:userID', async (req, res) => {
+    this.app.delete('/acc/delete/:accID', async (req, res) => {
       try {
-        const { userID } = req.query;
-        const user = await self.db.deleteUser(userID);
-        res.send(JSON.stringify(user));
+        const { accID } = req.query;
+        const acc = await self.db.deleteAcc(accID);
+        res.send(JSON.stringify(acc));
       } catch (err) {
         res.status(500).send(err);
       }
     });
 
-    this.app.get('/user/all', async (req, res) => {
+    this.app.get('/acc/all', async (req, res) => {
       try {
-        const user = await self.db.getAllUser();
-        res.send(JSON.stringify(user));
+        const acc = await self.db.getAllAcc();
+        res.send(JSON.stringify(acc));
       } catch (err) {
         res.status(500).send(err);
       }

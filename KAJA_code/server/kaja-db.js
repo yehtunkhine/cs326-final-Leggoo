@@ -33,9 +33,9 @@ export class KajaDatabase {
 
   async init() {
     const queryText = `
-    create table if not exists User (
-        userID integer not null primary key,
-        userName varchar(30) not null,
+    create table if not exists acc (
+        accID integer not null primary key,
+        accName varchar(30) not null,
         age integer not null,
         email varchar(40) not null,
         password varchar(40) not null
@@ -48,20 +48,9 @@ export class KajaDatabase {
         date date not null,
         time time not null,
         capacity integer not null,
-        category varchar(20) not null,
+        category varchar(20) not null
 
-        FK_userID integer FOREIGNKEY REFERENCES User(userID)
       );
-    
-
-
-      insert into 
-        User(userID, userName, age, email, password) 
-      values 
-        ('1', 'Artemis', 19, 'artemis@umass.edu', 'blahblah'),
-        ('2', 'Parzival', 17, 'parzival@umass.edu', 'cantrmb'),
-        ('3', 'John', 30, 'john@umass.edu', 'idktoo'),
-        ('4', 'Mia', 22, 'mia@umass.edu', 'whatthehell');
     `;
     const res = await this.client.query(queryText);
   }
@@ -72,47 +61,47 @@ export class KajaDatabase {
     await this.pool.end();
   }
 
-  // CREATE a user in the database.
-  async createUser(userID,userName,age,email,password) {
+  // CREATE a acc in the database.
+  async createAcc(accID,accName,age,email,password) {
     const queryText =
-      'INSERT INTO User (userID, userName, age, email,password) VALUES ($1, $2, $3, $4, $5) RETURNING *';
-    const res = await this.client.query(queryText, [userID, userName, age, email, password]);
+      'INSERT INTO acc (accID, accName, age, email,password) VALUES ($1, $2, $3, $4, $5) RETURNING *';
+    const res = await this.client.query(queryText, [accID, accName, age, email, password]);
     return res.rows;
   }
 
-  // READ a user from the database.
-  async getUser(userID) {
-    const queryText = 'SELECT * FROM User WHERE userID = $1';
-    const res = await this.client.query(queryText, [userID]);
+  // READ a Acc from the database.
+  async getAcc(accID) {
+    const queryText = 'SELECT * FROM acc WHERE accID = $1';
+    const res = await this.client.query(queryText, [accID]);
     return res.rows;
   }
 
-  // UPDATE a user in the database.
-  async updateUser(userID, userName, age, email, passowrd) {
+  // UPDATE a acc in the database.
+  async updateAcc(accID, accName, age, email, passowrd) {
     const queryText =
-      'UPDATE User SET userName = $2, age = $3, email = $4, password = $5 WHERE userID = $1 RETURNING *';
-    const res = await this.client.query(queryText, [userID, userName, age, email, passowrd]);
+      'UPDATE acc SET accName = $2, age = $3, email = $4, password = $5 WHERE accID = $1 RETURNING *';
+    const res = await this.client.query(queryText, [accID, accName, age, email, passowrd]);
     return res.rows;
   }
 
-  // DELETE a user from the database.
-  async deleteUser(userID) {
-    const queryText = 'DELETE FROM User WHERE userID = $1 RETURNING *';
-    const res = await this.client.query(queryText, [userID]);
+  // DELETE a acc from the database.
+  async deleteAcc(accID) {
+    const queryText = 'DELETE FROM acc WHERE accID = $1 RETURNING *';
+    const res = await this.client.query(queryText, [accID]);
     return res.rows;
   }
 
   // READ all people from the database.
-  async getAllUser() {
-    const queryText = 'SELECT * FROM User';
+  async getAllAcc() {
+    const queryText = 'SELECT * FROM acc';
     const res = await this.client.query(queryText);
     return res.rows;
   }
 
-  // READ all event created by a user.
-  async getUserEvent(userID) {
-    const queryText = 'SELECT eventID FROM Event WHERE FK_userID = $1';
-    const res = await this.client.query(queryText,[userID]);
+  // READ all event created by a acc.
+  async getAccEvent(accID) {
+    const queryText = 'SELECT eventID FROM Event WHERE FK_accID = $1';
+    const res = await this.client.query(queryText,[accID]);
     return res.rows;
   }
 
@@ -139,7 +128,7 @@ export class KajaDatabase {
         return res.rows;
     }
 
-    // DELETE a user from the database.
+    // DELETE a event from the database.
     async deleteEvent(eventID) {
         const queryText = 'DELETE FROM Event WHERE eventID = $1 RETURNING *';
         const res = await this.client.query(queryText, [eventID]);
@@ -153,4 +142,4 @@ export class KajaDatabase {
         return res.rows;
     }        
 }
-
+``
