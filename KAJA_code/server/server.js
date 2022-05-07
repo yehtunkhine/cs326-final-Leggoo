@@ -122,7 +122,7 @@ class KajaServer {
     await this.initDb();
     const port = process.env.PORT || 3000;
     this.app.listen(port, () => {
-      console.log(`PeopleServer listening on port ${port}!`);
+      console.log(`KajaServer listening on port ${port}!`);
     });
   }
 }

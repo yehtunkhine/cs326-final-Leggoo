@@ -103,7 +103,7 @@ export class KajaDatabase {
   }
 
   // READ all people from the database.
-  async allUser() {
+  async getAllUser() {
     const queryText = 'SELECT * FROM User';
     const res = await this.client.query(queryText);
     return res.rows;
@@ -147,7 +147,7 @@ export class KajaDatabase {
     }
 
     // READ all people from the database.
-    async allEvent() {
+    async getAllEvent() {
         const queryText = 'SELECT * FROM Event';
         const res = await this.client.query(queryText);
         return res.rows;
