@@ -22,3 +22,5 @@ Event Table
 | capacity	  | integer   | event’s available capacity|
 | category	  | String    | event’s category          |
 
+CRUD for database
+![userEvent.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/393be1b46bbd49ed0018ba059a4a584ccf7f8b7c/userEvent.png)
