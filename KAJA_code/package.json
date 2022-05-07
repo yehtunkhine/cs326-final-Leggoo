@@ -1,0 +1,23 @@
+{
+  "name": "kaja_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "deploy": "copyfiles *.js .env package*.json deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "copyfiles": "2.4.1"
+  }
+}
