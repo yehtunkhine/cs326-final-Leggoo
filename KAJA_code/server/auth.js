@@ -25,13 +25,13 @@ const strategy = new Strategy(async (email, password, done) => {
 passport.use(strategy);
 
 // Convert user object to a unique identifier.
-passport.serializeUser((user, done) => {
-  done(null, user);
+passport.serializeUser((email, done) => {
+  done(null, email);
 });
 
 // Convert a unique identifier to a user object.
-passport.deserializeUser((uid, done) => {
-  done(null, uid);
+passport.deserializeUser((eid, done) => {
+  done(null, eid);
 });
 
 export default {

@@ -1,6 +1,20 @@
+import 'dotenv/config';
 import express from 'express';
 import logger from 'morgan';
+import auth from './auth.js';
 import { KajaDatabase } from './kaja-db.js';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(dirname(__filename));
+
+const sessionConfig = {
+  // set this encryption key in Heroku config (never in GitHub)!
+  secret: process.env.SECRET || 'SECRET',
+  resave: false,
+  saveUninitialized: false,
+};
 
 class KajaServer {
   constructor(dburl) {
@@ -9,12 +23,53 @@ class KajaServer {
     this.app.use(logger('dev'));
     this.app.use(express.json());
     this.app.use(express.urlencoded({extended: false}));
+    this.app.use(expressSession(sessionConfig));
     this.app.use('/', express.static('public'));
+    this.auth.configure(app);
   }
-
+  
   async initRoutes() {
     // Note: when using arrow functions, the "this" binding is lost.
     const self = this;
+
+    function checkLoggedIn(req, res, next) {
+      if (req.isAuthenticated()) {
+        // If we are authenticated, run the next route.
+        next();
+      } else {
+        // Otherwise, redirect to the login page.
+        res.redirect('public/signIn.html');
+      }
+    }
+    app.get('/', checkLoggedIn, (req, res) => {
+      res.send('public/homePage.html');
+    });
+
+    app.get('/login', (req, res) =>
+      res.sendFile('public/login.html', { root: __dirname })
+    );
+
+    app.post(
+      '/login',
+      auth.authenticate('local', {
+        // use username/password authentication
+        successRedirect: '/public/homePage.html', // when we login, go to /private
+        failureRedirect: '/login', // otherwise, back to login
+      })
+    );
+
+    app.post('/register', (req, res) => {
+      const {accID, accName, age, email, password } = req.body;
+      if (KajaDatabase.createAcc(accID, accName, age, email,  password)) {
+        res.redirect('public/signIn.html');
+      } else {
+        res.redirect('public/Register.html');
+      }
+    });
+
+    app.get('/register', (req, res) =>
+      res.sendFile('public/Register.html', { root: __dirname })
+    );
 
     this.app.post('/acc/create/:accID/:accName/:age/:email/:password', async (req, res) => {
       try {

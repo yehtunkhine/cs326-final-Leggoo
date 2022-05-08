@@ -21,7 +21,7 @@ async findUser(email) {
 }
 
 async validatePassword(email, pwd) {
-    if (await this.findUser(email)) {
+    if (await this.findUser(email) === null || this.findUser(email) === undefined) {
       return false;
     }
     if ((await this.getAccLogin(email)).includes(pwd)) {
