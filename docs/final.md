@@ -1,5 +1,5 @@
 LEGGOO (Team #14)
-
+-----------------
 App: Kaja 가자
 Semester: Spring 2022
 
@@ -11,6 +11,8 @@ Semester: Spring 2022
 
 Kaja app is an event specific app for UMass students to connect and meet up. Whether it is a casual hangout trying new restaurants, having a picnic, or an outdoor activity meetup, all these events can be posted, shared and notified to anyone on the platform. Like any other social media applications, Kaja has features for making an account like sign up and log in with the homepage easily navigable with the navigation bar that includes all that can be done on the app. Users will have their own profile page where the events they have added can be seen. The main feed includes all events searchable. Users can also create their own events and publish them on the main feed.  This is innovative in a way where most event websites and apps we have now for this area do not have the ability for individual students to connect since it is always organized by some groups. This app allows both individuals and groups to be able to organize events whether they are formal or casual.
 
+UI
+---
 
 | UI view      | Purpose |
 |--------------|-----------|
@@ -21,7 +23,19 @@ Kaja app is an event specific app for UMass students to connect and meet up. Whe
 | My events  | This shows the events created specifically by the user unlike the feed.  | 
 |  Chat      |  This feature enables the users to communicate in forms of chat for more information about the events that they added. |
 
-[insert updated API graph]
+Sign up/ Log in ![signupLoginPage.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/signupLoginPage.png)
+Homepage and feed ![homePage.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/homePage.png)
+Profile ![userProfile.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/userProfile.png)
+Create event ![eventCreator.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/eventCreator.png)
+My events ![myEvents.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/myEvents.png)
+Chat ![chatBox.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc72d4e378ea9adca8e2d9512cd4ccebda344d/chatBox.png)
+
+API
+----
+
+
+DATABASE
+--------
 
 |  Database code   |  Descriptions  |
 |-----------------|--------------|
@@ -30,6 +44,7 @@ Kaja app is an event specific app for UMass students to connect and meet up. Whe
 |  ***  |  This is just a test for the database that we created. This is no longer in the final project code.    |
 
 [insert userEvent graph]
+
 
 |  URL routes/mappings  |    |
 |-----------------|--------------|
@@ -45,17 +60,19 @@ Kaja app is an event specific app for UMass students to connect and meet up. Whe
 |  /event/all  | getting all of the events|
 
 AUTHENTICATION AND AUTHORIZATION
+---------------------------------
 
 We included the auth.js file under our server folder,
--we tried to authenticate username and password and tested with the json data. We authenticate and check first if a user id is present in our user database. 
--If a user is present, we tried to check if their input passwords match correctly to the password in the database. 
--We haven’t figured out how to connect to the actual database we have due to time limitations.
--Our authentication works with json data but not with database.
--We have a slight problem in package.json dependencies that we are having error running the npm start. 
--The heroku deployment was not successful. 
-Heroku Link - https://kaja-cs326final.herokuapp.com/
+- we tried to authenticate username and password and tested with the json data. We authenticate and check first if a user id is present in our user database. 
+- If a user is present, we tried to check if their input passwords match correctly to the password in the database. 
+- We haven’t figured out how to connect to the actual database we have due to time limitations.
+- Our authentication works with json data but not with database.
+- We have a slight problem in package.json dependencies that we are having error running the npm start. 
+- The heroku deployment was not successful. 
+- Heroku Link - https://kaja-cs326final.herokuapp.com/
 
 DIVISION OF LABOR
+------------------
 
 Ye Tun Khine - Implemented the sql modification server side kaja-db.js / server.js, Implemented the sql modification client side crud.js / index.js, Added an HTML for createEvent page together with css, Connect database on Heroku and deploy application.
   
@@ -65,8 +82,6 @@ Yuki Thane - Did the API schema for CRUD, Added the chat box feature, made bluep
 
 Victor Vuong - did the API documentation, implemented the auth of the sign in login. 
 
-
-
 CONCLUSION
-
+-----------
 We got a great opportunity to work with the team and spend time figuring out how to connect codes. Although our app is not perfect and complete yet, we decided to work on polishing the project during our summer break. The biggest challenge was deciding the time to meet up for the teammates. Another challenge was connecting front-end, back-end and middleware to make it work as a one project. We personally find the back-end part of the project the hardest and it would be great if we had more time on the lecture about connecting to databases, deployment and authentication. Overall, we made the project as cohesive as possible in terms of visual as well as code despite the differences we had in the beginning.
