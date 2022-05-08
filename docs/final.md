@@ -63,13 +63,13 @@ AUTHENTICATION AND AUTHORIZATION
 ---------------------------------
 
 We included the auth.js file under our server folder,
--we tried to authenticate username and password and tested with the json data. We authenticate and check first if a user id is present in our user database. 
--If a user is present, we tried to check if their input passwords match correctly to the password in the database. 
--We haven’t figured out how to connect to the actual database we have due to time limitations.
--Our authentication works with json data but not with database.
--We have a slight problem in package.json dependencies that we are having error running the npm start. 
--The heroku deployment was not successful. 
-Heroku Link - https://kaja-cs326final.herokuapp.com/
+- we tried to authenticate username and password and tested with the json data. We authenticate and check first if a user id is present in our user database. 
+- If a user is present, we tried to check if their input passwords match correctly to the password in the database. 
+- We haven’t figured out how to connect to the actual database we have due to time limitations.
+- Our authentication works with json data but not with database.
+- We have a slight problem in package.json dependencies that we are having error running the npm start. 
+- The heroku deployment was not successful. 
+- Heroku Link - https://kaja-cs326final.herokuapp.com/
 
 DIVISION OF LABOR
 ------------------
@@ -81,8 +81,6 @@ Khai Wai - Implemented the Restful API for CRUD operations. Attempted to connect
 Yuki Thane - Did the API schema for CRUD, Added the chat box feature, made blueprints for UI parts of the application, hand drew the logo for the app as seen on the sign up/log in page, edited presentation video and uploaded it 
 
 Victor Vuong - did the API documentation, implemented the auth of the sign in login. 
-
-
 
 CONCLUSION
 -----------
