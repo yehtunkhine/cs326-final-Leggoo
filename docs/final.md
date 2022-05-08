@@ -32,6 +32,7 @@ Chat ![chatBox.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/bcfc7
 
 API
 ----
+![updatedAPI.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/5643675175d045b7f6eaf62742f8380ba7ede24b/updatedAPI.png)
 
 
 DATABASE
@@ -43,8 +44,9 @@ DATABASE
 |  ***    |  This is the Event table that keeps track of the events created by users. It has 6 attributes: eventID, eventName, data, time, capacity and category with the primary key set to eventID and foreignKey for this table referencing the primary key on the user table. This is to establish the 1:M relationship with the idea that one user can create many events, but each event can only have one creator/owner although other users can join.  |
 |  ***  |  This is just a test for the database that we created. This is no longer in the final project code.    |
 
-[insert userEvent graph]
-
+ROUTING
+-------
+![userEvent.png](https://github.com/yehtunkhine/cs326-final-Leggoo/blob/5643675175d045b7f6eaf62742f8380ba7ede24b/userEvent.png)
 
 |  URL routes/mappings  |    |
 |-----------------|--------------|
