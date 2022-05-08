@@ -9,6 +9,27 @@ export class KajaDatabase {
     this.dburl = dburl;
   }
 
+async findUser(email) {
+  try{
+    if (await this.getAccLogin(email)) {
+      return true;
+    }
+  }
+  catch(err){
+    return false
+  }
+}
+
+async validatePassword(email, pwd) {
+    if (await this.findUser(email)) {
+      return false;
+    }
+    if ((await this.getAccLogin(email)).includes(pwd)) {
+      return false;
+    }
+    return true;
+  }
+
   async connect() {
     // Create a new Pool. The Pool manages a set of connections to the database.
     // It will keep track of unused connections, and reuse them when new queries
@@ -73,6 +94,13 @@ export class KajaDatabase {
   async getAcc(accID) {
     const queryText = 'SELECT * FROM acc WHERE accID = $1';
     const res = await this.client.query(queryText, [accID]);
+    return res.rows;
+  }
+
+  // READ Acc from email in the database
+  async getAccLogin(email) {
+    const queryText = 'SELECT email, password FROM acc WHERE email = $1';
+    const res = await this.client.query(queryText, [email]);
     return res.rows;
   }
 
