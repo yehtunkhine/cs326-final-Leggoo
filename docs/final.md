@@ -63,7 +63,7 @@ Khai Wai - Implemented the Restful API for CRUD operations. Attempted to connect
 
 Yuki Thane - Did the API schema for CRUD, Added the chat box feature, made blueprints for UI parts of the application, hand drew the logo for the app as seen on the sign up/log in page, edited presentation video and uploaded it 
 
-Victor Vuong - 
+Victor Vuong - did the API documentation, implemented the auth of the sign in login. 
 
 
 
